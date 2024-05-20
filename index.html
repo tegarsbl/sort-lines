@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort Lines</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sort Lines</h1>
+        <div class="sort-container">
+            <select id="sortMethod">
+                <option value="alphabetic">Sort By Alphabetic</option>
+                <option value="alphabeticReverse">Sort By Alphabetic Reverse</option>
+                <option value="length">Sort By Length</option>
+                <option value="lengthReverse">Sort By Length Reverse</option>
+                <option value="reverse">Reverse Lines</option>
+                <option value="shuffle">Shuffle Lines</option>
+            </select>
+            <textarea id="textArea" rows="10" placeholder="Enter Text"></textarea>
+            <button class="sort-button" onclick="sortLines()">Sort</button>
+            <button class="copy-button" onclick="copyText()">Copy</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Tegar Sabila.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
